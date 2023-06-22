@@ -1,5 +1,5 @@
 // React Util
-import React, { useRef } from "react";
+import React from "react";
 
 // Icons
 import { RxCross1 } from "react-icons/rx";

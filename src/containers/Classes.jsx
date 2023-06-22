@@ -7,7 +7,6 @@ import MainIMG from "../assets/section3/SideImage.webp";
 
 // Animations
 import { motion } from "framer-motion";
-import { type } from "@testing-library/user-event/dist/type";
 
 const Classes = () => {
   const { ref, inView } = useInView({
