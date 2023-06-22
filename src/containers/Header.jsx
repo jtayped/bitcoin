@@ -1,5 +1,5 @@
 // React Util
-import React from "react";
+import React, { useState } from "react";
 
 // Constants
 import { socials, sections } from "../constants/Header";
@@ -7,7 +7,16 @@ import { socials, sections } from "../constants/Header";
 // Icons
 import { BsList } from "react-icons/bs";
 
+// JSX Components
+import SideBar from "./SideBar";
+
 const Header = () => {
+  const [isOpen, setOpen] = useState(false);
+
+  function toggleSideBar() {
+    setOpen(!isOpen);
+  }
+
   return (
     <div className="fixed top-0 w-full flex justify-between items-center px-8 md:px-16 py-6 md:py-0 md:h-[90px] bg-white shadow">
       <p className="font-extrabold font-accent text-accent text-2xl">LOGO</p>
@@ -29,9 +38,10 @@ const Header = () => {
           </li>
         ))}
       </ul>
-      <button className="md:hidden">
+      <button className="md:hidden" onClick={() => toggleSideBar()}>
         <BsList size={30} />
       </button>
+      {isOpen ? <SideBar toggleSideBar={toggleSideBar} /> : null}
     </div>
   );
 };

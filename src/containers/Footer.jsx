@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="mt-10 w-full flex flex-col text-white">
       <div className="flex justify-center bg-filler py-20">
-        <div className="flex gap-32 px-10">
+        <div className="flex flex-wrap md:flex-row justify-between max-w-[1000x] gap-10 px-10">
           <div className="max-w-[300px]">
             <p className="font-extrabold font-accent text-accent text-2xl">
               LOGO
