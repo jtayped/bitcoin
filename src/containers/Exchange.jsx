@@ -15,7 +15,7 @@ const Exchange = () => {
     }
   }
   return (
-    <div className="w-full flex justify-center py-10">
+    <section className="w-full flex justify-center py-10">
       <div className="flex flex-col items-center text-center gap-2 max-w-[500px]">
         <img src={Image} alt="" />
         <h2 className="text-sm text-gray-500">About</h2>
@@ -53,7 +53,7 @@ const Exchange = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

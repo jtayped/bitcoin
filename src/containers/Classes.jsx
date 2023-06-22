@@ -6,7 +6,7 @@ import MainIMG from "../assets/section3/SideImage.webp";
 
 const Classes = () => {
   return (
-    <div className="w-full flex items-center justify-center">
+    <section className="w-full flex items-center justify-center">
       <div className="max-w-[1200px] py-10 px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="flex items-center justify-center">
           <div>
@@ -25,7 +25,7 @@ const Classes = () => {
         </div>
         <img src={MainIMG} alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 

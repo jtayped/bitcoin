@@ -6,7 +6,7 @@ import { BsCurrencyBitcoin } from "react-icons/bs";
 
 const Prices = () => {
   return (
-    <div className="bg-filler text-white w-full px-4 py-7 flex flex-col sm:flex-row items-center justify-evenly flex-wrap gap-2">
+    <section className="bg-filler text-white w-full px-4 py-7 flex flex-col sm:flex-row items-center justify-evenly flex-wrap gap-2">
       <div className="flex items-center gap-1 font-accent text-2xl md:text-xl">
         <BsCurrencyBitcoin size={40} /> BTC /
       </div>
@@ -24,7 +24,7 @@ const Prices = () => {
           <p>1.000.000+</p>
         </li>
       </ol>
-    </div>
+    </section>
   );
 };
 

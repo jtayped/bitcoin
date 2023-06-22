@@ -6,7 +6,7 @@ import { options } from "../constants/Options";
 
 const Options = () => {
   return (
-    <div className="flex flex-col gap-5 items-center py-10">
+    <section className="flex flex-col gap-5 items-center py-10">
       <div className="text-center max-w-[500px]">
         <h2 className="text-sm text-gray-500">Options</h2>
         <p className="font-accent text-4xl font-bold">Lorem Ipsum Dolor Sit</p>
@@ -29,7 +29,7 @@ const Options = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

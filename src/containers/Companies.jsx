@@ -2,7 +2,7 @@ import React from "react";
 
 const Companies = () => {
   return (
-    <div className="bg-accent w-full px-4 py-10 flex justify-evenly flex-wrap gap-2">
+    <section className="bg-accent w-full px-4 py-10 flex justify-evenly flex-wrap gap-2">
       {[1, 2, 3, 4, 5].map((company, index) => (
         <li
           key={index}
@@ -11,7 +11,7 @@ const Companies = () => {
           COMPANY
         </li>
       ))}
-    </div>
+    </section>
   );
 };
 
