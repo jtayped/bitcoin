@@ -18,14 +18,21 @@ const Header = () => {
   }
 
   return (
-    <div className="fixed top-0 w-full flex justify-between items-center px-8 md:px-16 py-6 md:py-0 md:h-[90px] bg-white shadow">
-      <p className="font-extrabold font-accent text-accent text-2xl">LOGO</p>
+    <div className="z-10 fixed top-0 w-full flex justify-between items-center px-8 md:px-16 py-6 md:py-0 md:h-[90px] bg-white shadow">
+      <a
+        href="#hero"
+        className="font-extrabold font-accent text-accent text-2xl"
+      >
+        LOGO
+      </a>
       <nav className="hidden md:flex items-center gap-6 font-accent">
         {sections.map((section, index) => (
           <a
             key={index}
             href={section.link}
-            className={`${index === 0 ? "text-accent" : null}`}
+            className={`hover:text-accent hover:-translate-y-0.5 transition-all duration-200 ${
+              index === 0 ? "text-accent" : null
+            }`}
           >
             {section.name.toUpperCase()}
           </a>
@@ -34,7 +41,12 @@ const Header = () => {
       <ul className="hidden lg:flex items-center gap-3">
         {socials.map((socialMedia, index) => (
           <li key={index}>
-            <a href={socialMedia.link}>{socialMedia.icon}</a>
+            <a
+              className="hover:text-accent transition-colors duration-50"
+              href={socialMedia.link}
+            >
+              {socialMedia.icon}
+            </a>
           </li>
         ))}
       </ul>
