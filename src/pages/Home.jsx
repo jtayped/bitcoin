@@ -16,7 +16,7 @@ import {
 
 const Home = () => {
   return (
-    <div className="font-primary bg-background text-text pb-[1000px]">
+    <div className="font-primary bg-background text-text">
       <header>
         <Header />
         <Hero />

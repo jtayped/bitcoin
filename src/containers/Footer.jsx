@@ -8,8 +8,8 @@ import { contactOptions } from "../constants/Contact";
 const Footer = () => {
   return (
     <footer className="mt-10 w-full flex flex-col text-white">
-      <div className="flex justify-center bg-filler py-10">
-        <div className="flex gap-20 px-10">
+      <div className="flex justify-center bg-filler py-20">
+        <div className="flex gap-32 px-10">
           <div className="max-w-[300px]">
             <p className="font-extrabold font-accent text-accent text-2xl">
               LOGO
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
 
       <div className="flex justify-between items-center px-10 py-5 bg-black">
-        <p>2020 All Rights Reserved</p>
+        <p className="text-white/20">2020 All Rights Reserved</p>
         <ul className="flex items-center text-accent gap-2">
           {socials.map((socialMedia, index) => (
             <li key={index}>
