@@ -10,6 +10,7 @@ import {
   Prices,
   Exchange,
   Classes,
+  Options,
 } from "../containers";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
       <Prices />
       <Exchange />
       <Classes />
+      <Options />
     </div>
   );
 };
