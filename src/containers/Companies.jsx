@@ -13,6 +13,7 @@ const Companies = () => {
 
   return (
     <section
+      id="companies"
       ref={ref}
       className="bg-accent w-full px-4 py-10 flex justify-evenly flex-wrap gap-2"
     >

@@ -14,9 +14,13 @@ const Classes = () => {
     threshold: 0.6,
     triggerOnce: true,
   });
-  
+
   return (
-    <section ref={ref} className="w-full flex items-center justify-center">
+    <section
+      id="classes"
+      ref={ref}
+      className="w-full flex items-center justify-center"
+    >
       <div className="max-w-[1200px] py-10 px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
         <motion.div
           initial={{ opacity: 0, x: -30 }}

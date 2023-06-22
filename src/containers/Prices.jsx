@@ -16,6 +16,7 @@ const Prices = () => {
 
   return (
     <section
+      id="prices"
       ref={ref}
       className="bg-filler text-white w-full px-4 py-7 flex flex-col sm:flex-row items-center justify-evenly flex-wrap gap-2"
     >

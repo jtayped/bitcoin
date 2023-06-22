@@ -15,13 +15,17 @@ const Options = () => {
   });
 
   return (
-    <section ref={ref} className="flex flex-col gap-5 items-center py-10 px-8">
+    <section
+      id="services"
+      ref={ref}
+      className="flex flex-col gap-5 items-center py-10 px-8"
+    >
       <motion.div
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
         className="text-center max-w-[500px]"
       >
-        <h2 className="text-sm text-gray-500">Options</h2>
+        <h2 className="text-sm text-gray-500">Services</h2>
         <p className="font-accent text-4xl font-bold">Lorem Ipsum Dolor Sit</p>
         <p className="text-sm text-gray-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam

@@ -15,7 +15,7 @@ const About = () => {
   });
 
   return (
-    <section ref={ref} className="flex items-center justify-center">
+    <section id="about" ref={ref} className="flex items-center justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full justify-center items-center max-w-[1000px] py-10 px-8 font-primary">
         <div className="h-full flex flex-col justify-center">
           <motion.h2

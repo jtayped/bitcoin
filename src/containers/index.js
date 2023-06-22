@@ -5,6 +5,6 @@ export { default as About } from "./About";
 export { default as Prices } from "./Prices";
 export { default as Exchange } from "./Exchange";
 export { default as Classes } from "./Classes";
-export { default as Options } from "./Options";
+export { default as Services } from "./Services";
 export { default as Footer } from "./Footer";
 export { default as SideBar } from "./SideBar";

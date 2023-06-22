@@ -9,11 +9,11 @@ import {
 
 export const sections = [
   { name: "Home", link: "#home" },
-  { name: "About Us", link: "#about-us" },
+  { name: "About Us", link: "#about" },
+  { name: "Prices", link: "#prices" },
+  { name: "Exchange", link: "#exchange" },
+  { name: "Classes", link: "#classes" },
   { name: "Services", link: "#services" },
-  { name: "Portfolio", link: "/portfolio" },
-  { name: "Blog", link: "/blog" },
-  { name: "Contact", link: "/contact" },
 ];
 
 export const socials = [

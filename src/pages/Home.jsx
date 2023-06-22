@@ -10,7 +10,7 @@ import {
   Prices,
   Exchange,
   Classes,
-  Options,
+  Services,
   Footer,
 } from "../containers";
 
@@ -26,7 +26,7 @@ const Home = () => {
       <Prices />
       <Exchange />
       <Classes />
-      <Options />
+      <Services />
       <Footer />
     </div>
   );

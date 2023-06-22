@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div
+      id="hero"
       style={{ "--image-url": `url(${BG})` }}
       className="bg-[image:var(--image-url)] bg-cover bg-fixed bg-center w-full h-screen flex items-center justify-center"
     >

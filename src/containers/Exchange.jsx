@@ -24,7 +24,11 @@ const Exchange = () => {
     }
   }
   return (
-    <section ref={ref} className="w-full flex justify-center py-10">
+    <section
+      id="exchange"
+      ref={ref}
+      className="w-full flex justify-center py-10"
+    >
       <div className="flex flex-col items-center text-center gap-2 max-w-[500px]">
         <motion.img
           src={Image}
@@ -37,7 +41,7 @@ const Exchange = () => {
           animate={inView ? { opacity: 1 } : {}}
           className="text-sm text-gray-500"
         >
-          About
+          Exchange
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
