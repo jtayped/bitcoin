@@ -23,7 +23,7 @@ const Classes = () => {
             </p>
           </div>
         </div>
-        <img src={MainIMG} alt="" />
+        <img className="shadow-lg" src={MainIMG} alt="" />
       </div>
     </section>
   );
