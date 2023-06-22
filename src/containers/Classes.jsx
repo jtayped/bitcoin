@@ -47,7 +47,7 @@ const Classes = () => {
           transition={{ type: "tween" }}
           className="shadow-lg"
           src={MainIMG}
-          alt=""
+          alt="Coin that represents Bitcoin"
         />
       </div>
     </section>
