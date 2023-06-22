@@ -11,6 +11,7 @@ import {
   Exchange,
   Classes,
   Options,
+  Footer,
 } from "../containers";
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
       <Exchange />
       <Classes />
       <Options />
+      <Footer />
     </div>
   );
 };
