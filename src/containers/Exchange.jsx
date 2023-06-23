@@ -8,7 +8,7 @@ import Image from "../assets/section2/Main.svg";
 // Animations
 import { motion } from "framer-motion";
 
-const Exchange = () => {
+const Exchange = ({ bitcoinData }) => {
   const { ref, inView } = useInView({
     threshold: 0.6,
     triggerOnce: true,
@@ -88,7 +88,7 @@ const Exchange = () => {
 
           <div className="flex items-center gap-2">
             <div className="border p-1 md:p-2 border-accent rounded text-2xl">
-              <p>{(nBitcoin * 30206.7).toFixed(2)}</p>
+              <p>{(nBitcoin * bitcoinData.usd).toFixed(2)}</p>
             </div>
             <p className="text-xl">USD</p>
           </div>
