@@ -88,7 +88,9 @@ const Exchange = ({ bitcoinData }) => {
 
           <div className="flex items-center gap-2">
             <div className="border p-1 md:p-2 border-accent rounded text-2xl">
-              <p>{(nBitcoin * bitcoinData.usd).toFixed(2)}</p>
+              <p>
+                {(nBitcoin * (bitcoinData ? bitcoinData.usd : 1)).toFixed(2)}
+              </p>
             </div>
             <p className="text-xl">USD</p>
           </div>
