@@ -3,12 +3,12 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 
 // Icons
-import { BsCurrencyBitcoin } from "react-icons/bs";
+import { BsCurrencyBitcoin, BsArrowDownUp } from "react-icons/bs";
 
 // Animations
 import { motion } from "framer-motion";
 
-const Prices = () => {
+const Prices = ({ bitcoinData }) => {
   const { ref, inView } = useInView({
     threshold: 0.6,
     triggerOnce: true,
@@ -30,7 +30,7 @@ const Prices = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
           >
-            $9,9230
+            ${bitcoinData ? bitcoinData.usd : 0}
           </motion.p>
         </li>
         <li className="flex flex-col items-center text-center">
@@ -39,8 +39,16 @@ const Prices = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.125 }}
+            className={`flex items-center gap-1 ${
+              bitcoinData
+                ? bitcoinData.usd_24h_change > 0
+                  ? "text-green-600"
+                  : "text-red-600"
+                : "aaaaaaaaa"
+            }`}
           >
-            %15.05
+            {bitcoinData ? bitcoinData.usd_24h_change.toFixed(2) : 1}%
+            <BsArrowDownUp />
           </motion.p>
         </li>
         <li className="flex flex-col items-center text-center">
